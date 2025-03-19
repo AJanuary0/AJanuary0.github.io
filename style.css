@@ -1,4 +1,9 @@
 body {
+    background-image: url("vestuario\ y\ historia/noce.jpg"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     font-family: 'Arial', sans-serif;
     background-color: #1a1a1a; 
     color: #ffffff; 
@@ -107,4 +112,71 @@ footer {
 
 .social-links a:hover {
     color: #ffcc00; 
+}
+
+.carrusel {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+    min-width: 50%; 
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.carrusel-item img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin: 0 auto; 
+    display: block;
+}
+
+.carrusel-caption {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.carrusel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carrusel-control.prev {
+    left: 10px;
+}
+
+.carrusel-control.next {
+    right: 10px;
+}
+
+.carrusel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
